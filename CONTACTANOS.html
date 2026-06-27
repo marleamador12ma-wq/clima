@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contáctanos</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#2e8b57,#4caf50);
+}
+
+.contenedor{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    color:#2e8b57;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+}
+
+label{
+    font-weight:bold;
+    color:#333;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#2e8b57;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1b5e20;
+}
+
+.info{
+    margin-top:30px;
+    background:#e8f5e9;
+    padding:20px;
+    border-radius:10px;
+}
+
+.info h2{
+    color:#2e8b57;
+    margin-bottom:15px;
+}
+
+.info p{
+    text-align:left;
+    margin:8px 0;
+}
+
+footer{
+    margin-top:20px;
+    text-align:center;
+    color:#666;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h1>📩 Contáctanos</h1>
+
+<p>¿Tienes dudas, sugerencias o deseas colaborar con nosotros? Completa el siguiente formulario.</p>
+
+<form>
+
+<label>Nombre completo</label>
+<input type="text" placeholder="Escribe tu nombre" required>
+
+<label>Correo electrónico</label>
+<input type="email" placeholder="ejemplo@correo.com" required>
+
+<label>Teléfono</label>
+<input type="tel" placeholder="Tu número de teléfono">
+
+<label>Asunto</label>
+<select required>
+<option value="">Selecciona una opción</option>
+<option>Información sobre cambio climático</option>
+<option>Reportar un problema ambiental</option>
+<option>Sugerencias</option>
+<option>Colaboración</option>
+<option>Otro</option>
+</select>
+
+<label>Mensaje</label>
+<textarea rows="6" placeholder="Escribe aquí tu mensaje..." required></textarea>
+
+<button type="submit" onclick="mensaje()">Enviar mensaje</button>
+
+</form>
+
+<div class="info">
+
+<h2>📍 Información de contacto</h2>
+
+<p><strong>🏢 Empresa:</strong> EcoPlaneta</p>
+
+<p><strong>📍 Dirección:</strong> Av. Medio Ambiente #100, Ciudad Verde</p>
+
+<p><strong>📞 Teléfono:</strong> +52 (55) 1234-5678</p>
+
+<p><strong>📧 Correo:</strong> contacto@ecoplaneta.com</p>
+
+<p><strong>🕒 Horario:</strong> Lunes a Viernes de 9:00 a.m. a 6:00 p.m.</p>
+
+</div>
+
+<footer>
+
+<p><strong>🌎 ¡Gracias por contribuir al cuidado del medio ambiente!</strong></p>
+
+</footer>
+
+</div>
+
+<script>
+
+function mensaje(){
+    alert("¡Gracias por contactarnos! Hemos recibido tu mensaje.");
+}
+
+</script>
+
+</body>
+</html>
